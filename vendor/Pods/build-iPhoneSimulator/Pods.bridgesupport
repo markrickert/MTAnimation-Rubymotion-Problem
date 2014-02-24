@@ -1,0 +1,373 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<struct name='MTAnimationRange' type='{_MTAnimationRange=&quot;start&quot;f&quot;end&quot;f}' type64='{_MTAnimationRange=&quot;start&quot;d&quot;end&quot;d}'>
+<field declared_type='CGFloat' name='start' type='f' type64='d'/>
+<field declared_type='CGFloat' name='end' type='f' type64='d'/>
+</struct>
+<enum name='IS_IOS' value='1'/>
+<enum name='MTAnimationExaggerationDefault' value='0'/>
+<enum name='MTAnimationExaggerationHigh' value='3'/>
+<enum name='MTAnimationExaggerationLow' value='1'/>
+<enum name='MTAnimationExaggerationLudicrous' value='4'/>
+<enum name='MTAnimationExaggerationMedium' value='2'/>
+<enum name='MTViewAnimationOptionAutoreverse' value='16'/>
+<enum name='MTViewAnimationOptionBeginFromCurrentState' value='4'/>
+<enum name='MTViewAnimationOptionLayoutSubviews' value='1'/>
+<enum name='MTViewAnimationOptionRepeat' value='8'/>
+<function inline='true' name='MTMakeAnimationRange'>
+<arg declared_type='CGFloat' name='start' type='f' type64='d'/>
+<arg declared_type='CGFloat' name='end' type='f' type64='d'/>
+<retval declared_type='MTAnimationRange' type='{_MTAnimationRange=ff}' type64='{_MTAnimationRange=dd}'/>
+</function>
+<function name='MTTimingFunctionEaseInBack'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseInBounce'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseInCirc'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseInCubic'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseInElastic'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseInExpo'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseInOutBack'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseInOutBounce'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseInOutCirc'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseInOutCubic'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseInOutElastic'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseInOutExpo'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseInOutQuad'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseInOutQuart'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseInOutQuint'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseInOutSine'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseInQuad'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseInQuart'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseInQuint'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseInSine'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseOutBack'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseOutBounce'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseOutCirc'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseOutCubic'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseOutElastic'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseOutExpo'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseOutQuad'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseOutQuart'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseOutQuint'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='MTTimingFunctionEaseOutSine'>
+<arg declared_type='double' name='t' type='d'/>
+<arg declared_type='double' name='b' type='d'/>
+<arg declared_type='double' name='c' type='d'/>
+<arg declared_type='double' name='d' type='d'/>
+<arg declared_type='double' name='s' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function name='interpolatedMatrixFromMatrix'>
+<arg declared_type='CATransform3D' name='fromTf' type='{CATransform3D=ffffffffffffffff}' type64='{CATransform3D=dddddddddddddddd}'/>
+<arg declared_type='CATransform3D' name='toTf' type='{CATransform3D=ffffffffffffffff}' type64='{CATransform3D=dddddddddddddddd}'/>
+<arg declared_type='CGFloat' name='fraction' type='f' type64='d'/>
+<retval declared_type='CATransform3D' type='{CATransform3D=ffffffffffffffff}' type64='{CATransform3D=dddddddddddddddd}'/>
+</function>
+<function inline='true' name='mt_degreesToRadians'>
+<arg declared_type='double' name='degrees' type='d'/>
+<retval declared_type='double' type='d'/>
+</function>
+<function inline='true' name='mt_isInMask'>
+<arg declared_type='NSUInteger' name='bitmask' type='I' type64='Q'/>
+<arg declared_type='NSUInteger' name='value' type='I' type64='Q'/>
+<retval declared_type='BOOL' type='B'/>
+</function>
+<class name='UIView'>
+<method class_method='true' selector='mt_animateViews:duration:timingFunction:animations:completion:'>
+<arg declared_type='NSArray*' index='0' name='views' type='@'/>
+<arg declared_type='NSTimeInterval' index='1' name='duration' type='d'/>
+<arg declared_type='MTTimingFunction' function_pointer='true' index='2' name='timingFunction' type='^?'>
+<arg declared_type='double' type='d'/>
+<arg declared_type='double' type='d'/>
+<arg declared_type='double' type='d'/>
+<arg declared_type='double' type='d'/>
+<arg declared_type='double' type='d'/>
+<retval declared_type='double' type='d'/>
+</arg>
+<arg declared_type='MTAnimationsBlock' function_pointer='true' index='3' name='animations' type='@?'>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='MTAnimationCompletionBlock' function_pointer='true' index='4' name='completion' type='@?'>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='mt_animateViews:duration:timingFunction:options:animations:completion:'>
+<arg declared_type='NSArray*' index='0' name='views' type='@'/>
+<arg declared_type='NSTimeInterval' index='1' name='duration' type='d'/>
+<arg declared_type='MTTimingFunction' function_pointer='true' index='2' name='timingFunction' type='^?'>
+<arg declared_type='double' type='d'/>
+<arg declared_type='double' type='d'/>
+<arg declared_type='double' type='d'/>
+<arg declared_type='double' type='d'/>
+<arg declared_type='double' type='d'/>
+<retval declared_type='double' type='d'/>
+</arg>
+<arg declared_type='MTViewAnimationOptions' index='3' name='options' type='I' type64='Q'/>
+<arg declared_type='MTAnimationsBlock' function_pointer='true' index='4' name='animations' type='@?'>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='MTAnimationCompletionBlock' function_pointer='true' index='5' name='completion' type='@?'>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='mt_animateViews:duration:timingFunction:range:animations:completion:'>
+<arg declared_type='NSArray*' index='0' name='views' type='@'/>
+<arg declared_type='NSTimeInterval' index='1' name='duration' type='d'/>
+<arg declared_type='MTTimingFunction' function_pointer='true' index='2' name='timingFunction' type='^?'>
+<arg declared_type='double' type='d'/>
+<arg declared_type='double' type='d'/>
+<arg declared_type='double' type='d'/>
+<arg declared_type='double' type='d'/>
+<arg declared_type='double' type='d'/>
+<retval declared_type='double' type='d'/>
+</arg>
+<arg declared_type='MTAnimationRange' index='3' name='range' type='{_MTAnimationRange=ff}' type64='{_MTAnimationRange=dd}'/>
+<arg declared_type='MTAnimationsBlock' function_pointer='true' index='4' name='animations' type='@?'>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='MTAnimationCompletionBlock' function_pointer='true' index='5' name='completion' type='@?'>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method class_method='true' selector='mt_animateViews:duration:timingFunction:range:options:animations:completion:'>
+<arg declared_type='NSArray*' index='0' name='views' type='@'/>
+<arg declared_type='NSTimeInterval' index='1' name='duration' type='d'/>
+<arg declared_type='MTTimingFunction' function_pointer='true' index='2' name='timingFunction' type='^?'>
+<arg declared_type='double' type='d'/>
+<arg declared_type='double' type='d'/>
+<arg declared_type='double' type='d'/>
+<arg declared_type='double' type='d'/>
+<arg declared_type='double' type='d'/>
+<retval declared_type='double' type='d'/>
+</arg>
+<arg declared_type='MTAnimationRange' index='3' name='range' type='{_MTAnimationRange=ff}' type64='{_MTAnimationRange=dd}'/>
+<arg declared_type='MTViewAnimationOptions' index='4' name='options' type='I' type64='Q'/>
+<arg declared_type='MTAnimationsBlock' function_pointer='true' index='5' name='animations' type='@?'>
+<retval declared_type='void' type='v'/>
+</arg>
+<arg declared_type='MTAnimationCompletionBlock' function_pointer='true' index='6' name='completion' type='@?'>
+<retval declared_type='void' type='v'/>
+</arg>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='mt_animationExaggeration'>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method selector='mt_animationPerspective'>
+<retval declared_type='CGFloat' type='f' type64='d'/>
+</method>
+<method selector='setMt_animationExaggeration:'>
+<arg declared_type='CGFloat' index='0' name='mt_animationExaggeration' type='f' type64='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='setMt_animationPerspective:'>
+<arg declared_type='CGFloat' index='0' name='mt_animationPerspective' type='f' type64='d'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+</signatures>
